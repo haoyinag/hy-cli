@@ -2,22 +2,21 @@
  * @Author: 郁南
  * @LastEditors: 郁南
  * @Date: 2021-11-05 07:46:20
- * @LastEditTime: 2021-11-05 08:03:01
+ * @LastEditTime: 2021-11-05 22:05:57
  * @FilePath: /hy-cli/config/webpack.base.js
  * @Description: webpack基础/通用配置
- */
-
+ */ 
 const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin"); 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const paths = require("./paths");
+const paths = require("./paths"); 
 
 module.exports = {
-  entry: paths.src + "index.tsx", // 入口文件
+  entry: paths.src + "/index.tsx", // 入口文件
   output: {
     path: path.resolve(__dirname, "../dist"), // 输出地址
-    fileName: "[name].[contenthash].js", // 输出文件名
+    filename: "[name].[contenthash].js", // 输出文件名
     publicPath: "", // 公共路径
   },
   module: {

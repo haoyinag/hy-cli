@@ -2,12 +2,12 @@
  * @Author: 郁南
  * @LastEditors: 郁南
  * @Date: 2021-11-05 08:04:52
- * @LastEditTime: 2021-11-05 08:40:03
+ * @LastEditTime: 2021-11-05 22:13:35
  * @FilePath: /hy-cli/babel.config.js
  * @Description: babel配置
  */
 const { argv } = require("yargs");
-const isDev = arv.mode === "development";
+const isDev = argv.mode === "development";
 
 const plugins = [
   [
@@ -21,7 +21,7 @@ const plugins = [
   "@babel/plugin-syntax-dynamic-import",
   // 支持装饰器
   "@babel/plugin-transform-async-to-generator",
-  "transform-class-properties",
+  // "transform-class-properties",
 ];
 
 module.exports = (api) => {

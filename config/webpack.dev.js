@@ -2,16 +2,16 @@
  * @Author: 郁南
  * @LastEditors: 郁南
  * @Date: 2021-11-05 07:46:33
- * @LastEditTime: 2021-11-05 08:44:27
+ * @LastEditTime: 2021-11-05 22:05:51
  * @FilePath: /hy-cli/config/webpack.dev.js
  * @Description: webpack开发环境配置
  */
 // const { merge } = require("webpack-merge");
-const { merge } = require('webpack-merge');
+const merge = require("webpack-merge");
 const { HotModuleReplacementPlugin } = require("webpack");
 const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 
-const common = require("./webpack.base");
+const common = require("./webpack.base"); 
 
 const devConfig = {
   mode: "development",

@@ -2,7 +2,7 @@
  * @Author: 郁南
  * @LastEditors: 郁南
  * @Date: 2021-11-05 07:46:40
- * @LastEditTime: 2021-11-05 08:26:33
+ * @LastEditTime: 2021-11-05 21:45:22
  * @FilePath: /hy-cli/config/webpack.prod.js
  * @Description: webpack生产环境配置
  */
@@ -38,4 +38,4 @@ const prodConfig = {
   plugins: [new MiniCssExtractPlugin()], // 装载插件，才可以被使用
 };
 
-module.exports = merge(common, prodConfig);
+module.exports = WebpackMerge(common, prodConfig);
