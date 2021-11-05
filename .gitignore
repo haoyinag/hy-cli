@@ -38,3 +38,7 @@ winpty.exe.stackdump
 .*.local
 
 *.log
+
+dist
+/dist
+./dist
